@@ -20,6 +20,7 @@ header h1 a{color:#171010;text-decoration:none;}
 .tm{font-family:'Noto Sans KR',sans-serif;}
 .header-right{margin-left:auto;text-align:right;font-weight:50;}
 .button-round{padding:0.4em 0.7em;border-radius:1rem;border:1px solid #171010;color:#fff;background:#171010;}
+canvas{position:fixed;left:50%;transform:translate(-50%,0);bottom:0;height:70vh;}
 section{position:relative;width:100%;height:100%;overflow:hidden;}
 .main-copy{display:flex;white-space:nowrap;overflow:hidden;z-index:1;}
 .main-copy-wrap{font-size:6rem;letter-spacing:0;line-height:1em;padding-right:0.3em;animation:textLoop 24s linear infinite;min-width:100px;min-height:50px;flex-shrink:0;}
@@ -65,15 +66,12 @@ section{position:relative;width:100%;height:100%;overflow:hidden;}
 /* Media Queries from other files */
 @media (orientation:portrait){
     .main-sins-wrap span img{width:320px;margin:0 -50px -6px;}
-    #distort-image {
-        width: 100%;
-        height: 100%;
-        overflow-x:hidden;
-      }
+    #distort-image {width: 100%;height: 100%;overflow-x:hidden;}
     .section-con{height:fit-content}
     .team-copy{margin-right: 0px;;}
-    .team-copy{margin-left: 0px;;}
+    .team-copy{margin-left: 0px;;}}
 @media (orientation:landscape){
+    canvas{height:100vh;width:100%;}
     .section-con{justify-content:center;padding-top:0;}
     .content-con{justify-content:center;padding-top:0;}
     .section-inner{display:flex;justify-content:space-between;}
@@ -86,7 +84,8 @@ section{position:relative;width:100%;height:100%;overflow:hidden;}
     .foot-link{flex-direction:row;}}
 @media (min-width:600px){
     .member{margin-top:-40vh;}
-    .member-con{width:500px;}}
+    .member-con{width:500px;}
+    canvas{height:100%;}}
 @media (min-width:1024px){
     body{font-size:0.9rem;}
     .main-copy-wrap{font-size:12rem;}
