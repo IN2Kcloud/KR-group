@@ -22,10 +22,10 @@ header h1 a{color:#171010;text-decoration:none;}
 .button-round{padding:0.4em 0.7em;border-radius:1rem;border:1px solid #171010;color:#fff;background:#171010;}
 canvas{position:fixed;left:50%;transform:translate(-50%,0);bottom:0;height:70vh;}
 section{position:relative;width:100%;height:100%;overflow:hidden;}
-.main-copy{display:flex;white-space:nowrap;overflow:hidden;z-index:1;}
+.main-copy{display:flex;white-space:nowrap;overflow:hidden;z-index:1;padding-top:3rem;margin-top:50px;}
 .main-copy-wrap{font-size:6rem;letter-spacing:0;line-height:1em;padding-right:0.3em;animation:textLoop 24s linear infinite;min-width:100px;min-height:50px;flex-shrink:0;}
 @keyframes textLoop{from{transform:translateX(0%);}to{transform:translateX(-100%);}}
-.section-con{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow-x:hidden;padding-top:3rem;margin-top:200px;}
+.section-con{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow-x:hidden;/*padding-top:3rem;margin-top:200px;*/}
 .section-inner{width:90%;max-width:1200px;}
 .section-inner-con{width:100%;margin:0.7rem 0;}
 .section-inner-con p{margin:0.7rem 0;}
