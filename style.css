@@ -13,13 +13,14 @@ div,span,section,header,footer,p,a,nav{box-sizing:border-box;}
 .s-tit{padding:0.3em 0;}
 .main-copy-wrap{font-weight:100;color:#000;font-family:'Old London','Blackout','Times New Roman';}
 @font-face{font-family:'Old London';src:url('Olondona.otf') format('opentype');font-display:swap;}
-body{margin:0;padding:0;overflow-x:hidden;font-family:'Times New Roman','Noto Sans KR','sans-serif';font-size:0.8rem;font-weight:400;line-height:1.4em;color:#171010;background:#f1f1f1;}
+@font-face{font-family:'Vogue';src:url('Vogue.ttf') format('truetype');font-display:swap;}
+body{margin:0;padding:0;overflow-x:hidden;font-family:'Vogue', 'Times New Roman','Noto Sans KR','sans-serif';font-size:0.8rem;font-weight:400;line-height:1.4em;color:#171010;background:#f1f1f1;}
 header{position:fixed;width:100%;height:55px;top:0;left:0;padding:0 1rem;display:flex;align-items:center;z-index:50;}
 header h1{font-size:1.5rem;font-weight:50;}
 header h1 a{color:#171010;text-decoration:none;}
 .tm{font-family:'Noto Sans KR',sans-serif;}
 .header-right{margin-left:auto;text-align:right;font-weight:50;}
-.button-round{padding:0.4em 0.7em;border-radius:1rem;border:1px solid #171010;color:#fff;background:#171010;}
+.button-round{padding:0.7em 1.4em;border-radius:3rem;border:1px solid #171010;color:#fff;background:#171010;}
 canvas{position:fixed;left:50%;transform:translate(-50%,0);bottom:0;height:70vh;}
 section{position:relative;width:100%;height:100%;overflow:hidden;}
 .main-copy{display:flex;white-space:nowrap;overflow:hidden;z-index:1;padding-top:3rem;margin-top:50px;}
@@ -65,16 +66,36 @@ section{position:relative;width:100%;height:100%;overflow:hidden;}
 .linethrough a{text-decoration:line-through;}
 .video {width: 500px;overflow-x:hidden;}
 .section-1 {height:100vh;}
-.t-center {display:flex;justify-content:center;align-items:center;}
-.LPvideo {width: 66%;overflow-x:hidden;margin-top:10rem;}
+.t-center {width: 100vw;}
+.LPvideo {width: 100%; height: 33vh;overflow:hidden;margin-top:10rem;}
+.LPvideo img{width: 100%; object-fit: cover;}
+a{text-decoration: none;}
+
+.c-avatar-II {position: relative;width: 100%;height: 100%;}
+.content-con {width: 100%; height: 100%; display: flex;overflow: hidden; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center;}
+.s-tit {padding-bottom: 5%;}
+.s-tit-II {font-size:xx-large;font-weight: 600;}
+.Hover {position: relative; padding: 2% 0; border-top: 1px solid rgb(0, 0, 0); display: flex; align-items: center; justify-content: center; cursor: pointer; color: rgb(0, 0, 0); transition: color 0.2s ease-in-out; width: 100%; overflow: hidden;}
+.Hover:last-child {border-bottom: 1px solid rgb(0, 0, 0);}
+.hover-div {position: relative; width: 100%; display: flex; justify-content: center; align-items: center; transition: mix-blend-mode 0.2s ease; overflow: hidden;}
+.hover-div span{text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff; color: #000; /* Text color */}
+.parallax-vid {width: 100%; opacity: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease, transform 0.2s ease;}
+.Hover:hover .parallax-vid {opacity: 1;}
+.Hover:hover .hover-div {mix-blend-mode:normal; z-index: 999;}
+
 /* Media Queries from other files */
 @media (orientation:portrait){
     .main-sins-wrap span img{width:320px;margin:0 -50px -6px;}
     .video {width: 50%;overflow-x:hidden;}
-    .LPvideo {width: 75%;overflow-x:hidden;margin-top:10rem;}
+    .LPvideo {width: 100%; height: 20vh; overflow-x:hidden;margin-top:10rem;}
     .section-con{height:fit-content}
     .team-copy{margin-right: 0px;margin-left: 0px;}}
     .member-con img {margin-top: 3rem;}
+@media (max-width:1000px){
+    .parallax-vid {opacity: 1;}
+    .Hover {position: relative; padding: 2% 0;margin-top: 5px;margin-bottom: 5px; border-top: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0);}
+    /*.hover-div span{-webkit-text-stroke: 1px #fff;}*/
+}    
 @media (orientation:landscape){
     .video {width: 75%;overflow-x:hidden;}
     canvas{height:100vh;width:100%;}
