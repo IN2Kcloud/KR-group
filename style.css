@@ -75,7 +75,7 @@ a{text-decoration: none;}
 .content-con {width: 100%; height: 100%; display: flex;overflow: hidden; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center;}
 .s-tit {padding-bottom: 5%;}
 .s-tit-II {font-size:xx-large;font-weight: 600;}
-.Hover {position: relative; padding: 2% 0; border-top: 1px solid rgb(0, 0, 0); display: flex; align-items: center; justify-content: center; cursor: pointer; color: rgb(0, 0, 0); transition: color 0.2s ease-in-out; width: 100%; overflow: hidden;}
+.Hover {position: relative; padding: 2% 0; border-top: 1px solid rgb(0, 0, 0); display: flex; align-items: center; justify-content: center; /*cursor: pointer*/; color: rgb(0, 0, 0); transition: color 0.2s ease-in-out; width: 100%; overflow: hidden;}
 .Hover:last-child {border-bottom: 1px solid rgb(0, 0, 0);}
 .hover-div {position: relative; width: 100%; display: flex; justify-content: center; align-items: center; transition: mix-blend-mode 0.2s ease; overflow: hidden;}
 .hover-div span{text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px  1px 0 #fff, 1px  1px 0 #fff; color: #000; /* Text color */}
