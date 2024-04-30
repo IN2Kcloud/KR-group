@@ -1,6 +1,8 @@
 @charset 'utf-8';
 body{-webkit-font-smoothing:antialiased;}
 html,body,div,span,p,em,img,canvas,footer,header,nav,section{margin:0;padding:0;border:0;} footer,header,nav,section{display:block;} div,span,section,header,footer,p,a,nav{box-sizing:border-box;}
+#nav{position: fixed; top: 0%; left: 0%; width:100vw; height: 5vh; display: flex;justify-content: space-between;align-items: center;padding: 2vw 5vw; z-index: 1; /*background-color: #000;*/}
+#nav a{font-size: 1vw;font-weight: 300; color: black; text-decoration: none; display: inline-block;}.nav span {position: relative; z-index: 1;} .nav span::before {content: ''; position: absolute; z-index: -1; top: 0; bottom: 0; left: -0.25em; right: -0.25em; background-color: #FFB703; transform-origin: center right; transform: scaleX(0); transition: transform 0.2s ease-in-out;}.nav span:hover::before { transform: scaleX(1); transform-origin: center left;}
 .t-bold{font-weight:100;} .t-normal{font-weight:50;} .t-left{text-align:left;} .t-right{text-align:right;} .t-center{text-align:center; width: 100vw;} .s-tit{padding:0.3em 0; padding-bottom: 5%;} a{text-decoration: none;}
 .t-stroke-white{font-size:40px;color:#000000;letter-spacing:2px;text-transform: uppercase;} 
 .t-stroke-black{font-size:40px;color:#000;letter-spacing:2px;text-transform: uppercase;} 
